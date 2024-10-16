@@ -1,0 +1,8 @@
+.page {
+  position: relative;
+}
+
+.toggler__position {
+ position: absolute;
+ top: 0;
+}
