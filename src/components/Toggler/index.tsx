@@ -1,8 +1,8 @@
 import './toggler.css';
 import { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
-import SheepSVG from '../images/SheepSVG';
-import SheepLegSVG from '../images/SheepLegSVG';
+import SheepSVG from './SheepSVG';
+import SheepLegSVG from './SheepLegSVG';
 
 const Toggler = () => {
   const [checked, setChecked] = useState(false);
