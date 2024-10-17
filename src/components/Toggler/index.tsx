@@ -1,8 +1,8 @@
-import './toggler.css';
 import { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import SheepSVG from './SheepSVG';
 import SheepLegSVG from './SheepLegSVG';
+import styles from './toggler.module.css';
 
 const Toggler = () => {
   const [checked, setChecked] = useState(false);
@@ -144,21 +144,27 @@ const Toggler = () => {
   }, [checked, count]);
 
   return (
-    <div className="main-wrapper">
-      <div className="sheep__wrap">
-        <div ref={swearRef} className="sheep__swear">
-          #@$%*!
+    <div className={styles.main}>
+      <div className={styles.main_wrapper}>
+        <div className={styles.sheep__wrap}>
+          <div ref={swearRef} className={styles.sheep__swear}>
+            #@$%*!
+          </div>
+          <SheepSVG sheepRef={sheepRef} isAngry={count >= angerLimit} />
         </div>
-        <SheepSVG sheepRef={sheepRef} isAngry={count >= angerLimit} />
-      </div>
-      <div ref={armWrapRef} className="sheep__arm-wrap">
-        <SheepLegSVG legRef={armRef} />
-      </div>
-      <div ref={pawRef} className="sheep__paw" />
-      <div className="checkbox" onMouseOver={onHover} onMouseOut={offHover}>
-        <input type="checkbox" onChange={onChange} checked={checked} />
-        <div ref={bgRef} className="checkbox__bg" />
-        <div ref={indicatorRef} className="checkbox__indicator" />
+        <div ref={armWrapRef} className={styles.sheep__arm_wrap}>
+          <SheepLegSVG legRef={armRef} />
+        </div>
+        <div ref={pawRef} className={styles.sheep__paw} />
+        <div
+          className={styles.checkbox}
+          onMouseOver={onHover}
+          onMouseOut={offHover}
+        >
+          <input type="checkbox" onChange={onChange} checked={checked} />
+          <div ref={bgRef} className={styles.checkbox__bg} />
+          <div ref={indicatorRef} className={styles.checkbox__indicator} />
+        </div>
       </div>
     </div>
   );

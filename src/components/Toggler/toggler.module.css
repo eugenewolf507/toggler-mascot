@@ -1,8 +1,8 @@
-* {
+.main {
   box-sizing: border-box;
   
 }
-.main-wrapper {
+.main_wrapper {
   position: relative;
   display: flex;
   font-family: 'Arial', sans-serif;
@@ -48,7 +48,7 @@
   transform: translate(-15%, 12%) rotate(5deg) translate(0, -75%);
   background: transparent;
 }
-.sheep__arm-wrap {
+.sheep__arm_wrap {
   background: transparent;
   position: absolute;
   height: 30px;

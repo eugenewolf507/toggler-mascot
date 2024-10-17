@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './toggler.module.css';
 
 interface SheepSVGProps {
   sheepRef?: React.RefObject<SVGSVGElement>;
@@ -9,7 +10,7 @@ const SheepSVG: React.FC<SheepSVGProps> = ({ sheepRef, isAngry }) => {
   return (
     <svg
       ref={sheepRef}
-      className="sheep"
+      className={styles.sheep}
       viewBox="0 0 499 482"
       preserveAspectRatio="xMinYMin"
       fill="none"
