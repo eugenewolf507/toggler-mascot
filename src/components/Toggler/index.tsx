@@ -4,6 +4,20 @@ import SheepSVG from './SheepSVG';
 import SheepLegSVG from './SheepLegSVG';
 import styles from './toggler.module.css';
 
+const {
+  set,
+  to,
+  timeline,
+  utils: { random },
+} = gsap;
+const armLimit = random(0, 3);
+const headLimit = random(armLimit + 1, armLimit + 3);
+const angerLimit = random(headLimit + 1, headLimit + 3);
+const armDuration = 0.2;
+const sheepDuration = 0.25;
+const checkboxDuration = 0.25;
+const pawDuration = 0.1;
+
 const Toggler = () => {
   const [checked, setChecked] = useState(false);
   const [count, setCount] = useState(1);
@@ -14,20 +28,6 @@ const Toggler = () => {
   const armRef = useRef(null);
   const bgRef = useRef(null);
   const indicatorRef = useRef(null);
-  const {
-    set,
-    to,
-    timeline,
-    utils: { random },
-  } = gsap;
-
-  const armLimit = random(0, 3);
-  const headLimit = random(armLimit + 1, armLimit + 3);
-  const angerLimit = random(headLimit + 1, headLimit + 3);
-  const armDuration = 0.2;
-  const sheepDuration = 0.25;
-  const checkboxDuration = 0.25;
-  const pawDuration = 0.1;
 
   const onHover = () => {
     if (Math.random() > 0.5 && count > armLimit) {
@@ -128,6 +128,13 @@ const Toggler = () => {
           { duration: sheepDuration, y: '100%' },
           delay + pawDuration,
         );
+      console.log(`
+          SHEEP
+          count = ${count}
+          armLimit = ${armLimit}
+          angerLimit = ${angerLimit}
+          count >= angerLimit = ${count >= angerLimit}
+        `);
       return sheepTL;
     };
     const showTimeline = () => {

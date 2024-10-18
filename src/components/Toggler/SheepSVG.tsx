@@ -171,51 +171,51 @@ const SheepSVG: React.FC<SheepSVGProps> = ({ sheepRef, isAngry }) => {
           <path
             d="M246.46 231.97V244.97C243.13 245.92 238.43 247.66 233.46 250.97C228.84 254.04 225.59 257.4 223.46 259.97"
             stroke="black"
-            stroke-width="6"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
+            strokeWidth="6"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
           />
           <path
             d="M246.46 231.97V244.97C249.79 245.92 254.49 247.66 259.46 250.97C264.08 254.04 267.33 257.4 269.46 259.97"
             stroke="black"
-            stroke-width="6"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
+            strokeWidth="6"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
           />
           <path
             d="M127.29 56.5099C124.79 60.0099 122.03 64.55 119.71 70.15C118.36 73.41 117.39 76.4699 116.68 79.2399C119.61 82.0099 123.62 85.3 128.8 88.33C133.89 91.31 138.63 93.1899 142.44 94.3899"
             stroke="#ED1C24"
-            stroke-width="9"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="9"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M77.6996 78.68C81.9896 78.99 87.2997 78.96 93.2797 78.01C96.7597 77.46 99.8796 76.68 102.61 75.84C103.44 71.89 104.14 66.76 104.02 60.76C103.9 54.86 103.02 49.84 102.06 45.97"
             stroke="#ED1C24"
-            stroke-width="9"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="9"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M117.97 112.41C116.57 108.34 114.48 103.46 111.26 98.33C109.39 95.34 107.46 92.77 105.62 90.59C101.66 91.37 96.6596 92.73 91.1796 95.19C85.7996 97.6 81.5197 100.38 78.3297 102.78"
             stroke="#ED1C24"
-            stroke-width="9"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="9"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M190.46 156.41C183.89 155.54 174.61 153.58 164.35 148.83C154.56 144.29 147.3 138.8 142.46 134.51"
             stroke="black"
-            stroke-width="7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="7"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M305.46 155.5C311.48 154.7 319.99 152.9 329.39 148.55C338.37 144.39 345.02 139.36 349.46 135.43"
             stroke="black"
-            stroke-width="7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="7"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </>
       )}
